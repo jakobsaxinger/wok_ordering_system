@@ -12,7 +12,7 @@ $(document).ready(function() {
 
   function loadOrders() {
     $.ajax({
-      url: 'http://localhost:8000/orders',
+      url: 'http://wok.scrimo.com/orders',
       method: 'GET',
       success: function(response) {
         active_orders = []
@@ -123,7 +123,7 @@ $(document).ready(function() {
     var data = { order: orderId };
 
     $.ajax({
-      url: 'http://localhost:8000/markAsDone',
+      url: 'http://wok.scrimo.com/markAsDone',
       method: 'POST',
       data: JSON.stringify(data),
       contentType: 'application/json',
