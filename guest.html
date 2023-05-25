@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Emmas Geburtstagswok</title>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <style>
+    #overlay {
+      position: fixed;
+      display: none;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0,0,0,0.8);
+      z-index: 2;
+      cursor: pointer;
+    }
+    #overlay-text {
+      position: fixed;
+      width: 500px;
+      height: 300px;
+      top: 50%;
+      left: 50%;
+      color: white;
+      margin-top: -150px;
+      margin-left: -250px;
+    }
+  </style>
+</head>
+<body>
+  <div id="overlay">
+    <h2 id="overlay-text">Bestellung gespeichert!</h2>
+  </div>
+  <div class="container">
+    <h1>Emmas Geburtstagswok</h1
+    <br>
+      <form id="orderForm">
+      <label for="name" class="form-label">Name:</label>
+      <input type="text" id="name" name="name" required class="form-control form-control-lg"><br><br>
+      <div class="row">
+        <div class="col">
+          <h3>Zutaten:</h3><br>
+          <div class="form-check">
+            <input type="checkbox" name="zutaten" value="Hühnerfleisch" class="form-check-input">
+            <label class="form-check-label">Hühnerfleisch</label>
+          </div>
+          <div class="form-check">
+            <input type="checkbox" name="zutaten" value="UDON Nudeln" class="form-check-input">
+            <label class="form-check-label">UDON Nudeln</label>
+          </div>
+          <div class="form-check">
+            <input type="checkbox" name="zutaten" value="Garnelen" class="form-check-input">
+            <label class="form-check-label">Garnelen</label>
+          </div>
+          <div class="form-check">
+            <input type="checkbox" name="zutaten" value="Gemüse" class="form-check-input">
+            <label class="form-check-label">Gemüse gemischt</label>
+          </div>
+          <div class="form-check">
+            <input type="checkbox" name="zutaten" value="Schwammerl" class="form-check-input">
+            <label class="form-check-label">Schwammerl</label>
+          </div>
+          <div class="form-check">
+            <input type="checkbox" name="zutaten" value="Kalamari" class="form-check-input">
+            <label class="form-check-label">Kalamari</label>
+          </div>
+          <div class="form-check">
+            <input type="checkbox" name="zutaten" value="Ananas" class="form-check-input">
+            <label class="form-check-label">Ananas</label>
+          </div>
+          <div class="form-check">
+            <input type="checkbox" name="zutaten" value="Chilis" class="form-check-input">
+            <label class="form-check-label">Chilis</label>
+          </div>
+        </div>
+        <div class="col">
+          <h4>Geschmacksrichtung</h4>
+          <div class="form-check">
+            <input type="radio" name="zutaten" value="Chinesisch" class="form-check-input" checked>
+            <label class="form-check-label">Chinesisch</label>
+          </div>
+          <div class="form-check">
+            <input type="radio" name="zutaten" value="Curry" class="form-check-input">
+            <label class="form-check-label">Thai - Curry</label>
+          </div>
+        </div>
+      </div>
+      <br>
+      <br>
+      <button id="orderButton" type="submit" class="btn btn-success btn-lg">Bestellung absenden</button>
+    </form>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="guest.js"></script>
+</body>
+</html>
