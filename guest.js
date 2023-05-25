@@ -24,7 +24,7 @@ $(document).ready(function() {
     };
 
     $.ajax({
-      url: 'http://localhost:8000/order',
+      url: 'http://wok.scrimo.com/order',
       method: 'POST',
       data: JSON.stringify(order),
       contentType: 'application/json',
